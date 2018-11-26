@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mau_cam"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/rect_white"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:hint="Nhập từ khóa"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#cccccc" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/badge_layout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:id="@+id/relative_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:onClick="sendOrderHistory"
+                    android:backgroundTint="#ffffff"
+                    android:id="@+id/button1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/ic_toolbar_alert" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/notification_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout"
+                android:background="@drawable/item_count"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShoppiApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reset_password">We just need your register Email id send your password reset instructions.</string>
+    <string name="profile">Vui lòng cập nhật tên và ảnh đại diện để hoàn tất quá trình đăng ký.</string>
+</resources>

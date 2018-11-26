@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:id="@+id/nameDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/mau_cam"
+        android:text="MATERIALS"
+        android:layout_margin="19.2dp"/>
+
+    <TextView
+        android:id="@+id/infoDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="#999999"
+        android:layout_marginLeft="19.2dp"
+        android:lineSpacingExtra="6dp"
+        android:letterSpacing="0.0625"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut\npretium pretium tempor. Ut eget imperdiet neque. In volutpat\nante semper diam molestie, et aliquam erat laoreet. Sed sit amet\narcu aliquet, molestie justo at, auctor nunc."/>
+
+</LinearLayout>

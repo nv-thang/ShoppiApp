@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_bottom_home"
+        icononly="true"
+        inActiveColor="#9b9b9b"
+        activeColor="#ef4e33"/>
+
+    <tab
+        id="@+id/tab_tag"
+        icon="@drawable/ic_bottom_shop_tag"
+        icononly="true"
+        inActiveColor="#9b9b9b"
+        activeColor="#ef4e33"/>
+    <tab
+        id="@+id/tab_cart"
+        icon="@drawable/ic_bottom_cart"
+        icononly="true"
+        inActiveColor="#9b9b9b"
+        activeColor="#ef4e33"/>
+    <tab
+        id="@+id/tab_about"
+        icon="@drawable/ic_bottom_about"
+        icononly="true"
+        inActiveColor="#9b9b9b"
+        activeColor="#ef4e33"/>
+
+</tabs>

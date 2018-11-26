@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/v1"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp">
+
+                    </android.support.v4.view.ViewPager>
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_below="@+id/view"
+                        android:layout_gravity="bottom"
+                        android:backgroundTint="@android:color/white"
+                        app:ci_drawable="@drawable/circledot"
+                        app:ci_drawable_unselected="@drawable/circledot"
+                        app:ci_height="8dp"
+                        app:ci_width="8dp" />
+
+                    <include layout="@layout/toolbar_detail" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_nameShoeDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19.21dp"
+                    android:layout_marginTop="19.2dp"
+                    android:layout_marginBottom="8.9dp"
+                    android:text="AX Paris Short Sleeve"
+                    android:textColor="#212224"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19.2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_giakmDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$ 25.99"
+                        android:textColor="#0070d6"
+                        android:textSize="13.4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_giaDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9.6dp"
+                        android:text="$ 45.99"
+                        android:textSize="13.4dp" />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tablayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            app:tabGravity="fill"
+                            app:tabIndicatorColor="#0070d6"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="#212224"
+                            app:tabTextColor="#999999" />
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewpager1"
+                            android:layout_marginBottom="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp" />
+
+                    </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="19.2dp"
+        android:elevation="15dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingBottom="28.79dp">
+
+        <Button
+            android:onClick="buyNow"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gray_categories_rect"
+            android:text="Buy now"
+            android:textColor="@color/mau_cam" />
+
+    </LinearLayout>
+
+</RelativeLayout>

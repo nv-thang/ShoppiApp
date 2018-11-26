@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f77e4e</color>
+    <color name="colorPrimaryDark">#ef4e33</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="mau_cam">#ef4e33</color>
+    <color name="trong_suot">#E6FFFFFF</color>
+</resources>
